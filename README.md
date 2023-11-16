@@ -17,7 +17,9 @@ git clone https://github.com/shunyanaka/fibonacci_api.git
 
 ex)  
 cd fibonacci_api  
-sudo flask --app app run --port 80 --host 0.0.0.0
+nohup sudo flask --app app run --port 80 --host 0.0.0.0 &
+
+nohup:　バックグラウンドでも実行できるようにする。
 
 sudo: 「Super User DO」の略で、管理者（スーパーユーザー）権限でコマンドを実行するために使用されます。これにより、通常は許可されない操作が可能になる。
 
