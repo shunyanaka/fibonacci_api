@@ -28,3 +28,20 @@ run: Flaskアプリケーションを実行するためのコマンド。
 --port 80: このオプションで、アプリケーションがリッスンするポートを指定。ポート80はHTTPのデフォルトポート。
 
 --host 0.0.0.0: このオプションで、アプリケーションがどのネットワークインターフェースを使って外部からの接続を受け入れるかを指定。0.0.0.0はすべての利用可能なインターフェースを意味し、外部のどのホストからもアクセスできるようにする。
+
+## 結果の取得
+ターミナル等  
+curl -X GET -H "Content-Type: application/json" "http://(任意のサーバ名).com/fib?n=(計算したい数字)"  
+
+ex1)  
+curl -X GET -H "Content-Type: application/json" "http://(任意のサーバ名).com/fib?n=7"  
+結果  
+{"result":13}  
+
+
+ex2)  
+curl -X GET -H "Content-Type: application/json" "http://(任意のサーバ名).com/fib?n=a"  
+or  
+curl -X GET -H "Content-Type: application/json" "http://(任意のサーバ名).com/fib?n=a"  
+結果  
+{"message":"n must be a positive integer","status":400}
