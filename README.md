@@ -4,19 +4,19 @@
 
 ## 手順１：pythonとFlaskのインストール
 
-ex)
-sudo apt install python-is-python3
+ex)  
+sudo apt install python-is-python3  
 sudo pip install flask
 
 ## 手順２；コードのクローン
 
-ex)
+ex)  
 git clone https://github.com/shunyanaka/fibonacci_api.git
 
 ## 手順３：実行
 
-ex)
-cd fibonacci_api
+ex)  
+cd fibonacci_api  
 sudo flask --app app run --port 80 --host 0.0.0.0
 
 sudo: 「Super User DO」の略で、管理者（スーパーユーザー）権限でコマンドを実行するために使用されます。これにより、通常は許可されない操作が可能になる。
